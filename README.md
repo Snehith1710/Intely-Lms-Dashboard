@@ -21,7 +21,7 @@ The sidebar consists of 6 pages namely:
 5. Achievements
 6. Forum
 
-It has a clean UI that makes the user experience more efficient.
+It has a clean UI that makes the user experience more cheerful and efficient.
 
 ## Libraries used
 
