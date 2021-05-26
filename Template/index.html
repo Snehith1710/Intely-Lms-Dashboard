@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ========== Meta tags ============= -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Intely Task</title>
+
+    <!-- ========= CSS Plugins ============ -->
+    <link rel="stylesheet" href="vendors/feather/feather.css" />
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css" />
+    <link
+      rel="stylesheet"
+      href="vendors/datatables.net-bs4/dataTables.bootstrap4.css"
+    />
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/select.dataTables.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    
+    <!-- ========= CSS Stylesheet =========== -->
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css" />
+    <!-- -------------- -->
+
+    <!-- ========== ICON ===============-->
+    <link rel="shortcut icon" href="images/intelLogo.png" />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- ============== Top Navigation Bar ================ -->
+      <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div
+          class="
+            text-center
+            navbar-brand-wrapper
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <a class="navbar-brand brand-logo mr-5" href="index.html"
+            ><p style="font-size: 30px; padding-top: 15px;" >
+              <img src="images/intelLogo.png" style="margin-right: 15px; letter-spacing: 0.5rem;"  />Intely</p></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"
+            ><img src="images/intelLogo.png" alt="logo"
+          /></a>
+        </div>
+        <div
+          class="
+            navbar-menu-wrapper
+            d-flex
+            align-items-center
+            justify-content-end
+          "
+        >
+
+          
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-settings d-none d-lg-flex" style="margin-right: 20px;" >
+              <a class="nav-link" href="#">
+                <i class="ti-bell"></i>
+              </a>
+            </li>
+            <li class="nav-item nav-profile dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-toggle="dropdown"
+                id="profileDropdown"
+              >
+                <img src="images/faces/face28.jpg" alt="profile" />
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                aria-labelledby="profileDropdown"
+              >
+                
+                <a class="dropdown-item">
+                  <i class="ti-power-off text-primary"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+            
+          </ul>
+          <button
+            class="
+              navbar-toggler navbar-toggler-right
+              d-lg-none
+              align-self-center
+            "
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+
+        <div id="right-sidebar" class="notifications-panel">
+          <i class="settings-close ti-close"></i>
+          <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="todo-tab"
+                data-toggle="tab"
+                href="#todo-section"
+                role="tab"
+                aria-controls="todo-section"
+                aria-expanded="true"
+                >Notifications</a
+              >
+            </li>
+          </ul>
+
+          <div class="tab-content" id="setting-content">
+            <div
+              class="tab-pane fade show active scroll-wrapper"
+              id="todo-section"
+              role="tabpanel"
+              aria-labelledby="todo-section"
+            >
+              <div>
+                <ul class="d-flex flex-column todo-list">
+                  <p style="opacity: 80%">Today</p>
+                  <a class="dropdown-item preview-item d-flex">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon">
+        <span class="badge badge-pill badge-info mr-2 ">MC</span>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">
+                        Margo Corn has invited you to the project Untitled
+                      </h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        2 min
+                      </p>
+                    </div>
+                  </a>
+
+                  <a class="dropdown-item preview-item d-flex">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon">
+        <span class="badge badge-pill badge-success mr-2 ">EH</span>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">
+                        Elsa Hoffman removed you from Web Dolfin
+                      </h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        1hr
+                      </p>
+                    </div>
+                  </a>
+
+                  <p style="opacity: 80%">Yesterday</p>
+
+                  <a class="dropdown-item preview-item d-flex">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon">
+        <span class="badge badge-pill badge-danger mr-2 ">NP</span>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">
+                        Nadya Poplovetsc accepted your invitation to the
+                        <br />project Untitled 2
+                      </h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        14:12
+                      </p>
+                    </div>
+                  </a>
+
+                  <a class="dropdown-item preview-item d-flex">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon">
+        <span class="badge badge-pill badge-primary mr-2 ">KK</span>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal">
+                        Konstantin Konstantinovich removed you from<br />
+                        Mobile Dolfin
+                      </h6>
+                      <p class="font-weight-light small-text mb-0 text-muted">
+                        14:12
+                      </p>
+                    </div>
+                  </a>
+
+                  <p style="opacity: 80%;">Mon 25 Mar 19</p>
+
+                <a class="dropdown-item preview-item d-flex ">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon ">
+        <span class="badge badge-pill badge-danger mr-2 ">NP</span>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">
+                      Nadya Poplovetsc mentioned you in a comment in the <br/>project Untitled 2
+                    </h6>
+                    <p class="font-weight-light small-text mb-0 text-muted">
+                      14:12
+                    </p>
+                  </div>
+                </a>
+
+                <a class="dropdown-item preview-item d-flex ">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon ">
+        <span class="badge badge-pill badge-info mr-2 ">MD</span>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">
+                      Magda Davis accepted your invitation to the <br/>project Untitled 2
+                    </h6>
+                    <p class="font-weight-light small-text mb-0 text-muted">
+                      14:12
+                    </p>
+                  </div>
+                </a>
+                </ul>
+              </div>
+            </div>
+            <!-- ================ Notification tab end =================== -->
+
+         <!-- ============== Top Navigation Bar end ===================-->
+
+            
+          </div>
+        </div>
+        
+        <!-- ===================== Sidebar-Navigation ==================== -->
+
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="ti-home menu-icon"></i>
+                <span class="menu-title">Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+              >
+                <i class="icon-layout menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+              >
+                <i class="ti-book menu-icon"></i>
+                <span class="menu-title">My Enrollments</span>
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="myCourses.html"
+              >
+                <i class="ti-book menu-icon"></i>
+                <span class="menu-title">My Courses</span>
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+              >
+                <i class="ti-star menu-icon"></i>
+                <span class="menu-title">Achievements</span>
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+              >
+                <i class="icon-contract menu-icon"></i>
+                <span class="menu-title">Forum</span>
+              </a>
+              
+            </li>         
+            
+            
+          </ul>
+        </nav>
+        <!-- ==================== Sidebar-Navigation end =================-->
+
+        <!-- ===================== Main Panel ============================ -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-md-12 grid-margin">
+                <div class="row">
+                  <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                    <h3 class="font-weight-bold" style="font-size: 40px;" >Hi, champion!</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+     <!-- =============== Upcoming lessons and Leaderboard ====================-->
+
+            <div class="row">
+              <div class="col-md-6 col-lg-4 grid-margin stretch-card">
+                <div >
+                  <div >
+                    <h4 class="card-title">Upcoming lessons</h4>
+                    <div class=" pt-2">
+                      <ul class="d-flex flex-column todo-list todo-list-custom">
+                        <li>
+                          <div class="lesson-time"  >
+                            <p style="font-size: 15px; font-weight: 600; " >Jun, 10</p>
+                            <p style="opacity: 80%; font-size: 12px; " >4:00 PM</p>
+                          </div>
+                          <div class="form-check form-check-flat">
+                             <p style="font-weight: 600; font-size: 13px; " > Tutoring. Algebra</p>
+                             <p style="opacity: 70%; font-size: 12px;" >Kiersten Lange</p>
+                          </div>
+                          <div>
+                            <img src="images/faces/face1.jpg" alt="profile" class="nav-link  upcoming-lessons-image "  id="profileDropdown"/>
+                        </div></li>
+                        <li>
+                          <div class="lesson-time" >
+                            <p style="font-size: 14px; font-weight: 600; margin-right: 14px;" >Jun 10</p>
+                          </div>
+                          <div class="form-check form-check-flat">
+                              <p style="font-weight: 600; font-size: 13px;" >School homework</p>
+                              <p style="opacity: 70%; font-size: 12px; " >Global History / Analysis</p>
+                          </div>
+                          <div>
+                            <img src="images/faces/face21.jpg" alt="profile" class="nav-link  upcoming-lessons-image "  id="profileDropdown"/>
+                       </div> </li>
+                        <li>
+                          <div class="lesson-time" >
+                            <p style="font-size: 14px; font-weight: 600;  " >Jun 11</p>
+                            <p style="opacity: 80%; font-size: 12px; " >5:00 PM</p>
+                          </div>
+                          <div class="form-check form-check-flat">
+                             <p style="font-weight: 600; font-size: 13px; margin-left: 13px;" > Tutoring. French language </p>
+                             <p style="opacity: 70%; font-size: 12px; margin-left: 10px;" >Pierre Hackett</p>
+                          </div>
+                          <div>
+                            <img src="images/faces/face19.jpg" alt="profile" class="nav-link  upcoming-lessons-image "  id="profileDropdown" />
+                        </div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                  <div class="col-md-6  col-lg-5 grid-margin stretch-card">
+                <div class="card" style='  border: 5px #f0f0f0 solid;'>
+                  <div class="card-body card-leaderboard ">
+                    <p class="card-title mb-4">Leaderboard</p>
+                    <div class="table-responsive">
+                      <table  >
+                        <thead style="background-color: #eee; font-size: 13px; " >
+                          <tr>
+                            <th>Rank</th>
+                            <th style="transform: translateX(25px)" >Name</th>
+                            <th>Best Score</th>
+                            <th>Points</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1 <i class="fa fa-caret-up" aria-hidden="true" style="color: rgb(12, 216, 12);" ></i></td>
+                            <td class="font-weight-bold leaderboard-name">
+                              <img src="images/faces/face24.jpg" alt="profile" class="nav-link"  id="profileDropdown" style="height: 40px; width: 60px; border-radius: 50%; margin: 10px 0;" />
+                               <p> Patrick Alvess Devano</p>
+                            </td>
+                            <td  >98</td>
+                            <td >
+                              <div >2324</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2 •</td>
+                            <td class="font-weight-bold leaderboard-name ">
+                              <img src="images/faces/face13.jpg" alt="profile" class="nav-link"  id="profileDropdown" style="height: 40px; width: 60px; border-radius: 50% ; margin: 10px 0; "/>
+                              <p>  Jeniffer Hudson </p> </td>
+                            <td>96</td>
+                            <td>
+                              <div >2310</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3 <i class="fa fa-caret-down" aria-hidden="true" style="color: red;"></i></td>
+                            <td class="font-weight-bold leaderboard-name "><img src="images/faces/face14.jpg" alt="profile" class="nav-link"  id="profileDropdown" style="height: 40px; width: 60px; border-radius: 50%; margin: 10px 0;" />
+                               <p> Stevia Rownders</p></td>
+                            <td>97</td>
+                            <td >
+                              <div >2305</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4 •</td>
+                            <td class="font-weight-bold leaderboard-name "><img src="images/faces/face12.jpg" alt="profile" class="nav-link"  id="profileDropdown" style="height: 40px; width: 60px; border-radius: 50%;margin: 10px 0; "/>
+                               <p> Sam Anderson </p> </td>
+                            <td>89</td>
+                            <td >
+                              <div >2119</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>16<i class="fa fa-caret-up" aria-hidden="true" style="color: rgb(12, 216, 12);" ></i></td>
+                            <td class="font-weight-bold leaderboard-name"><img src="images/faces/face6.jpg" alt="profile" class="nav-link"  id="profileDropdown" style="height: 40px; width: 60px; border-radius: 50%;margin: 10px 0; "/>
+                                <p>Jorge Rodriguez </p></td>
+                            <td>82</td>
+                            <td >
+                              <div>1998</div>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+<div class="col-md-6  col-lg-3 grid-margin stretch-card">
+
+<div class="calendar">
+  <div class="calendar__opts">
+    <select name="calendar__month" id="calendar__month">
+      <option>Jan</option>
+      <option>Feb</option>
+      <option>Mar</option>
+      <option>Apr</option>
+      <option selected>May</option>
+      <option>Jun</option>
+      <option>Jul</option>
+      <option>Aug</option>
+      <option>Sep</option>
+      <option>Oct</option>
+      <option>Nov</option>
+      <option>Dec</option>
+    </select>
+
+    <select name="calendar__year" id="calendar__year">
+      <option>2017</option>
+      <option>2018</option>
+      <option>2019</option>
+      <option selected>2020</option>
+    </select>
+  </div>
+
+  <div class="calendar__body">
+    <div class="calendar__days">
+      <div>M</div>
+      <div>T</div>
+      <div>W</div>
+      <div>T</div>
+      <div>F</div>
+      <div>S</div>
+      <div>S</div>
+    </div>
+
+    <div class="calendar__dates">
+      <div class="calendar__date calendar__date--grey"><span>27</span></div>
+      <div class="calendar__date calendar__date--grey"><span>28</span></div>
+      <div class="calendar__date calendar__date--grey"><span>29</span></div>
+      <div class="calendar__date calendar__date--grey"><span>30</span></div>
+      <div class="calendar__date"><span>1</span></div>
+      <div class="calendar__date"><span>2</span></div>
+      <div class="calendar__date"><span>3</span></div>
+      <div class="calendar__date"><span>4</span></div>
+      <div class="calendar__date"><span>5</span></div>
+      <div class="calendar__date"><span>6</span></div>
+      <div class="calendar__date"><span>7</span></div>
+      <div class="calendar__date"><span>8</span></div>
+      <div class="calendar__date"><span>9</span></div>
+      <div class="calendar__date"><span>10</span></div>
+      <div class="calendar__date"><span>11</span></div>
+      <div class="calendar__date"><span>12</span></div>
+      <div class="calendar__date"><span>13</span></div>
+      <div class="calendar__date"><span>14</span></div>
+      <div class="calendar__date"><span>15</span></div>
+      <div class="calendar__date"><span>16</span></div>
+      <div class="calendar__date"><span>17</span></div>
+      <div class="calendar__date"><span>18</span></div>
+      <div class="calendar__date"><span>19</span></div>
+      <div class="calendar__date"><span>20</span></div>
+      <div class="calendar__date  calendar__date--last-date calendar__date--range-end"><span>21</span></div>
+      <div class="calendar__date"><span>22</span></div>
+      <div class="calendar__date"><span>23</span></div>
+      <div class="calendar__date"><span>24</span></div>
+      <div class="calendar__date"><span>25</span></div>
+      <div class="calendar__date"><span>26</span></div>
+      <div class="calendar__date"><span>27</span></div>
+      <div class="calendar__date"><span>28</span></div>
+      <div class="calendar__date"><span>29</span></div>
+      <div class="calendar__date"><span>30</span></div>
+      <div class="calendar__date"><span>31</span></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+            </div>
+
+            <!-- ============== Upcoming lessons and Leaaderboard end ================ -->
+
+           <!-- =========== Graph and your courses ================ --> 
+
+            <div class="row">
+              <div class="col-md-4 col-lg-4 grid-margin stretch-card">
+                <div>
+                  <div class="dashboard-chart ">
+                    <canvas id="order-chart"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-8 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div >
+                      <div class="d-flex justify-content-between " >
+                     <p class="card-title">Your Courses</p>
+                     <div> <i class="fa fa-bookmark" aria-hidden="true" style="color: blue; margin-right: 10px;" ></i>
+
+                      <i class="fa fa-search" aria-hidden="true" style="color: blue;" ></i></div>
+</div>
+                      <p style="color: #858585;">26 Courses</p>
+                      
+                    </div>
+                     <div class="row">
+                  <div class="col-md-5 mb-4 stretch-card transparent">
+                    <div class="card card-tale1">
+                      <div class="card-body"  >
+                        <div class="d-flex mb-4 " >
+                        <img src="images/art and design.jpg" alt="profile" class="nav-link"  id="profileDropdown" style="height: 55px; width: 75px; border-radius: 40%; " />
+                      <div>  <p class="mb-2" style="color: rgb(13, 197, 13); font-weight: 600; " >Beginners</p>
+                        <p class="mb-2" style="font-weight: 600; font-size: 18px;" >Art and Design</p>
+                        <p>By Brad Stevens</p></div></div>
+                        
+                        <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="68"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    <span class="sr-only">68% Complete</span>
+  </div>
+</div>
+<div class="d-flex justify-content-between"  >
+   <p>68%</p>
+<p>19/26</p>
+</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 mb-4 stretch-card transparent">
+                    <div class="card card-tale2">
+                      <div class="card-body">
+                        <div class="d-flex mb-4 " >
+                          <img src="images/daily workouts.jpg" alt="profile" class="nav-link"  id="profileDropdown" style="height: 55px; width: 75px; border-radius: 40%; " />
+                       <div> <p class="mb-2"  style="color: rgb(241, 26, 98); font-weight: 600;" >Advanced</p>
+                        <p class=" mb-2" style="font-weight: 600; font-size: 18px;">Daily Workouts</p>
+                        <p>By Hailey Stuart</p></div></div>
+                        
+                        <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="39"
+  aria-valuemin="0" aria-valuemax="100" style="width:39%">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div><div style="display: flex; justify-content: space-between; " >
+                          <p>39%</p>
+<p>3/8</p></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2 mb-4 stretch-card transparent" >
+<i class="icon-circle-plus" style="display: flex; margin-left: 20px; justify-content: center;align-items: center; transform: scale(2);" ></i>
+
+                  </div>
+                </div>  
+                </div>
+              </div>
+
+             
+            </div>
+<!-- =========== Graph and your courses end ================ -->
+
+           
+<!-- ===================== Skills and Tasks ====================-->
+            <div class="row">
+              <div class="col-md-4 col-lg-4 stretch-card grid-margin" >
+                <div class="card" >
+                  <div class="card-body card-skills " >
+                                            <p class="card-title">Skills</p>
+
+                    <canvas id="skills-chart" style=" margin-top: 70px; height: 50px; width: 50px;" ></canvas>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="row">
+                  <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body card-tasks ">
+                        <p class="card-title">Tasks</p>
+                        <div>
+                          
+                           <div class="form-check form-check-flat">
+                            <label class="form-check-label">
+                              <input class="checkbox" type="checkbox" />
+                              Concise history of Jend. Soedirman
+                            </label>
+                            <p> Due on 4:30 PM, 3 Mar 2019 <span class="badge badge-pill badge-success">History</span>
+ </p><div class="d-flex"><img src="images/faces/face10.jpg" alt="profile" class="nav-link"  id="profileDropdown" style="height: 40px; width: 60px; border-radius: 50% ; "/><p>Mrs. Shakeera</p></div>
+                          </div>
+
+                           <div class="form-check form-check-flat">
+                            <label class="form-check-label">
+                              <input class="checkbox" type="checkbox" />
+                              Make 3 carricature on paper
+                            </label>
+                          <p> Due on 2:40 PM, 28 Feb 2019 <span class="badge badge-pill badge-info">Art</span>
+ </p><div class="d-flex"><img src="images/faces/face22.jpg" alt="profile" class="nav-link"  id="profileDropdown" style="height: 40px; width: 60px; border-radius: 50% ; "/><p>Mr. Robert Sergio</p></div>
+
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-12 stretch-card grid-margin grid-margin-md-0"
+                  >
+                    <div class="card data-icon-card-primary" style='  border: 5px #f0f0f0 solid;' >
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between" >
+                        <p class="card-title">Goals</p>
+                        <div class="dropdown">
+    <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" >Weekly</a>
+      <a class="dropdown-item">Monthly</a>
+    </div>
+  </div>
+
+                                  
+</div>
+       <div class="d-flex justify-content-between" >
+          <canvas id="goals-chart"></canvas>
+  </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-title">Homework progress</p>
+                    <ul class="icon-data-list">
+                      <li  style="background-color: #003b00;" >
+                        <div class="d-flex">
+                          <img src='images/biology_progress.png' alt="progress" style='height: 50px; width: 50px'  />
+                          <div style="color: #fff;">
+                            <p class="mb-1" style='font-weight:700' >Biology</p>
+                            <p class="mb-0">
+                              September, 7 Monday
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="background-color: #f0f0f0;" > 
+                        <div class="d-flex">
+                          <img src="images/physics_progress.png" alt="progress" style='height: 50px; width: 50px' />
+                          <div>
+                            <p class="mb-1" style='font-weight:700'>Physics</p>
+                            <p class="mb-0"> September, 7 Monday</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="background-color: #f0f0f0;">
+                        <div class="d-flex">
+                          <img src="images/chemistry_progress.png" alt="progress" style='height: 50px; width: 50px'/>
+                          <div>
+                            <p class="mb-1" style='font-weight:700'>Chemistry</p>
+                            <p class="mb-0">
+                               September, 8 Tuesday
+                            </p>
+                          </div>
+                        </div>
+                      </li>   
+                     <li style="background-color: #f0f0f0;">
+                        <div class="d-flex">
+                          <img src="images/philosophy_progress.png" alt="progress" style='height: 50px; width: 50px'/>
+                          <div>
+                            <p class="mb-1" style='font-weight:700'>Philosophy</p>
+                            <p class="mb-0">
+                               September, 8 Tuesday
+                            </p>
+                          </div>
+                        </div>
+                      </li>                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <!-- content-wrapper ends -->
+          
+        </div>
+        <!-- main-panel ends -->
+      </div>
+    </div>
+
+    <!-- JS Plugins -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+    <script src="vendors/chart.js/Chart.min.js"></script>
+    <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script src="js/dataTables.select.min.js"></script>
+   
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+
+    <!-- JS Custom files for this page-->
+    <script src="js/dashboard.js"></script>
+    <script src="js/Chart.roundedBarCharts.js"></script>
+  </body>
+</html>
