@@ -2,7 +2,7 @@
 
 ## Description
 
-This project (task) is a Learning Management System Dashboard. It has a clean UI that makes the user experience more efficient. The home page consists 9 tabs namely:
+This project (task) is a Learning Management System Dashboard. The home page consists 9 tabs namely:
 1. Upcoming lessons
 2. Leaderboard
 3. Time Table
@@ -21,6 +21,7 @@ The sidebar consists of 6 pages namely:
 5. Achievements
 6. Forum
 
+It has a clean UI that makes the user experience more efficient.
 
 ## Libraries used
 
