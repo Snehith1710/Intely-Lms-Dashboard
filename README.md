@@ -21,16 +21,16 @@ The sidebar consists of 6 pages namely:
 5. Achievements
 6. Forum
 
-It has a clean UI that makes the user experience more cheerful and efficient.
+*It has a clean UI that makes the user experience more cheerful and efficient.*
 
 ## Libraries used
 
-1. Bootstrap 4
-2. jQuery
-3. Chart.js
-4. Font-awesome
-5. Themify icons
-6. Feather.css
+1. **Bootstrap 4** : Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit. (as per https://getbootstrap.com/)
+2. **jQuery** : jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. (as per https://jquery.com/)
+3. **Chart.js** : Simple, clean and engaging HTML5 based JavaScript charts. Chart.js is an easy way to include animated, interactive graphs on your website for free. (as per https://www.chartjs.org/)
+4. **Font-awesome** : Font Awesome is a font and icon toolkit based on CSS and Less. (as per https://fontawesome.com/)
+5. **Themify icons** : Themify Icons is a complete set of icons for use in web design and apps, consisting of 320+ pixel-perfect, hand-crafted icons. (as per https://themify.me/themify-icons)
+6. **Feather.css** : Feather is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability. (as per https://feathericons.com/)
 
 
 ## How to run this project
