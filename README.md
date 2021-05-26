@@ -2,7 +2,7 @@
 
 ## Description
 
-This project (task) is a Learning Management System Dashboard. The home page consists 9 tabs namely:
+This project ( task ) is a Learning Management System Dashboard. The home page consists 9 tabs namely:
 1. Upcoming lessons
 2. Leaderboard
 3. Time Table
