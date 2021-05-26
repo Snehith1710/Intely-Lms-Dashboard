@@ -1,5 +1,7 @@
 # Intely-Lms-Dashboard
 
+**Project** **URL**: https://intely-lms-task.netlify.app/
+
 ## Description
 
 This project ( task ) is a Learning Management System Dashboard. The home page consists 9 tabs namely:
