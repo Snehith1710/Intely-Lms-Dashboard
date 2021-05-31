@@ -1,4 +1,4 @@
-# Intely-Lms-Dashboard
+# Lms-Dashboard
 
 **Project** **URL**: https://intely-lms-task.netlify.app/
 
